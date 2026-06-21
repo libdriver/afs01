@@ -44,7 +44,7 @@
 #define SUPPLY_VOLTAGE_MIN        4.75f                /**< chip min supply voltage */
 #define SUPPLY_VOLTAGE_MAX        5.25f                /**< chip max supply voltage */
 #define MAX_CURRENT               10.0f                /**< chip max current */
-#define TEMPERATURE_MIN           25.0f                /**< chip min operating temperature */
+#define TEMPERATURE_MIN           -10.0f               /**< chip min operating temperature */
 #define TEMPERATURE_MAX           50.0f                /**< chip max operating temperature */
 #define DRIVER_VERSION            1000                 /**< driver version */
 
@@ -305,7 +305,7 @@ uint8_t afs01_get_chip_id(afs01_handle_t *handle, uint8_t id[4])
  *             - 3 handle is not initialized
  * @note       none
  */
-uint8_t si7021_get_reg(afs01_handle_t *handle, uint16_t reg, uint8_t *buf, uint16_t len)
+uint8_t afs01_get_reg(afs01_handle_t *handle, uint16_t reg, uint8_t *buf, uint16_t len)
 {
     if (handle == NULL)                                  /* check handle */
     {
@@ -346,8 +346,8 @@ uint8_t afs01_info(afs01_info_t *info)
     info->supply_voltage_min_v = SUPPLY_VOLTAGE_MIN;                /* set minimal supply voltage */
     info->supply_voltage_max_v = SUPPLY_VOLTAGE_MAX;                /* set maximum supply voltage */
     info->max_current_ma = MAX_CURRENT;                             /* set maximum current */
-    info->temperature_max = TEMPERATURE_MAX;                        /* set minimal temperature */
-    info->temperature_min = TEMPERATURE_MIN;                        /* set maximum temperature */
+    info->temperature_max = TEMPERATURE_MAX;                        /* set maximum temperature */
+    info->temperature_min = TEMPERATURE_MIN;                        /* set minimal temperature */
     info->driver_version = DRIVER_VERSION;                          /* set driver version */
     
     return 0;                                                       /* success return 0 */

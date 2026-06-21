@@ -13,8 +13,8 @@ var driver__afs01_8c =
     [ "TEMPERATURE_MIN", "driver__afs01_8c.html#aab353db5bf4eb787f86a2080f609a551", null ],
     [ "afs01_deinit", "group__afs01__base__driver.html#ga9eebfb58c3bd1607684fc8e04c553a55", null ],
     [ "afs01_get_chip_id", "group__afs01__base__driver.html#ga4cf99c076ade90cfb412feb1d7cc088f", null ],
+    [ "afs01_get_reg", "group__afs01__extend__driver.html#ga92840bc690c429bed1ee174e847fc0dd", null ],
     [ "afs01_info", "group__afs01__base__driver.html#ga0ccf2a30a34bcb74ffdc68d7e955e2d7", null ],
     [ "afs01_init", "group__afs01__base__driver.html#gacc9ad515969c87789afaa8dd2d0b85c6", null ],
-    [ "afs01_read", "group__afs01__base__driver.html#ga85502bd3a3d0706c628c45d7c076a712", null ],
-    [ "si7021_get_reg", "group__afs01__extend__driver.html#gabe7d1ad57096e97a0e25c490c7c3e53c", null ]
+    [ "afs01_read", "group__afs01__base__driver.html#ga85502bd3a3d0706c628c45d7c076a712", null ]
 ];

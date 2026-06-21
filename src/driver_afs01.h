@@ -242,7 +242,7 @@ uint8_t afs01_get_chip_id(afs01_handle_t *handle, uint8_t id[4]);
  *             - 3 handle is not initialized
  * @note       none
  */
-uint8_t si7021_get_reg(afs01_handle_t *handle, uint16_t reg, uint8_t *buf, uint16_t len);
+uint8_t afs01_get_reg(afs01_handle_t *handle, uint16_t reg, uint8_t *buf, uint16_t len);
 
 /**
  * @}

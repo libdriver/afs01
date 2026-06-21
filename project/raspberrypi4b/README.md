@@ -123,7 +123,7 @@ afs01: min supply voltage is 4.8V.
 afs01: max supply voltage is 5.2V.
 afs01: max current is 10.00mA.
 afs01: max temperature is 50.0C.
-afs01: min temperature is 25.0C.
+afs01: min temperature is -10.0C.
 ```
 
 ```shell
